@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeelBack - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css"></head>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="assets/logo.png" alt="FeelBack Logo" class="logo">
+        <h1>FeelBack</h1>
+        <p class="slogan">Le questionnaire de satisfaction</p>
+    </header>
+    <!-- Bouton de retour à la page d'accueil -->
+    <a href="/FeelBack" class="btn btn-secondary">REVENIR SUR LA PAGE D'ACCUEIL</a>
+
+    <!-- Tableau de bord -->
+    <section class="dashboard">
+        <h2>Tableau de bord</h2>
+        <p>Cette page regroupe des statistiques moyennes sur l'ensemble des réponses données</p>
+
+        <div class="stats-container">
+            <div class="stat-box">
+                <p class="stat-number"><?php echo $total_responses; ?></p>
+                <p class="stat-label">Réponses</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number"><?php echo $avg_delivery_rating; ?> / 5</p>
+                <p class="stat-label">Délai de livraison</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number"><?php echo $avg_parcel_condition_rating; ?> / 5</p>
+                <p class="stat-label">État du colis</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-number"><?php echo $avg_courier_behavior_rating; ?> / 5</p>
+                <p class="stat-label">Comportement du livreur</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>2024 | FeelBack</p>
+    </footer>
+</body>
+</html>

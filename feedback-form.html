@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeelBack - Feedback Form</title>
+    <link rel="stylesheet" href="css/style.css"></head>
+<body>
+    <header>
+        <!-- Logo -->
+        <img src="assets/logo.png" alt="FeelBack Logo" class="logo">
+        <h1>FeelBack</h1>
+        <p class="slogan">Le questionnaire de satisfaction</p>
+    </header>
+    <a href="/FeelBack" class="btn btn-secondary">REVENIR SUR LA PAGE D'ACCUEIL</a>
+    <div class="container mx-auto mt-10">
+        <h3>Donnez votre avis</h3>
+
+        <form action="submit-feedback.php" method="POST" class="mt-10 max-w-xl mx-auto">
+            <div class="mb-4">
+                <label for="delivery_rating" class="block">Respect du délai de livraison:</label>
+                <br>
+                <input type="radio" name="delivery_rating" value="1" required> 1
+                <input type="radio" name="delivery_rating" value="2"> 2
+                <input type="radio" name="delivery_rating" value="3"> 3
+                <input type="radio" name="delivery_rating" value="4"> 4
+                <input type="radio" name="delivery_rating" value="5"> 5
+                <br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="parcel_condition_rating" class="block">État du colis à la réception:</label>
+                <br>
+                <input type="radio" name="parcel_condition_rating" value="1" required> 1
+                <input type="radio" name="parcel_condition_rating" value="2"> 2
+                <input type="radio" name="parcel_condition_rating" value="3"> 3
+                <input type="radio" name="parcel_condition_rating" value="4"> 4
+                <input type="radio" name="parcel_condition_rating" value="5"> 5
+                <br><br>
+            </div>
+
+            <div class="mb-4">
+                <label for="courier_behavior_rating" class="block">Comportement du livreur:</label>
+                <br>
+                <input type="radio" name="courier_behavior_rating" value="1" required> 1
+                <input type="radio" name="courier_behavior_rating" value="2"> 2
+                <input type="radio" name="courier_behavior_rating" value="3"> 3
+                <input type="radio" name="courier_behavior_rating" value="4"> 4
+                <input type="radio" name="courier_behavior_rating" value="5"> 5
+                <br><br>
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>2024 | FeelBack</p>
+    </footer>
+</body>
+</html>
